@@ -124,7 +124,7 @@ h4 {
 .row .col-xs-6 img {
   width: 95%;
 }
-#view_customers {
+.view_customers {
   font-size: 15px;
   color: blue;
 }
@@ -196,7 +196,7 @@ h3 {
 [class*="arrow-"] {
   display: inline-block;
   font-size: 30px;
-  color: lightgrey;
+  color: blue;
 }
 .carousel img {
   width: 90%;
@@ -212,6 +212,18 @@ h3 {
   display: inline-block;
   color: blue;
 }
+
+/* sezione features */
+.section_features {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.section_features h2 {
+  padding-bottom: 30px;
+}
+
+
 /* medie query */
 @media screen and (max-width: 1200px) {
 
