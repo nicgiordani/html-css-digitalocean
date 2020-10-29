@@ -133,9 +133,9 @@ h4 {
 
 .section_deploy {
   width: 100%;
-  padding-top: 30px;
+  padding-top: 40px;
 }
-.section_deploy h2 {
+h2 {
   text-align: center;
   color: #031c4e;
 }
@@ -148,6 +148,7 @@ h3 {
   width: 80%;
   padding-top: 40px;
   margin: auto;
+  padding-bottom: 40px;
 }
 .container_80:after {
   content: "";
@@ -178,15 +179,72 @@ h3 {
   color: #586686;
 }
 
+/* sezione designed */
+
+.section_designed {
+  width: 100%;
+  background-color: #f3f5f9;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.carousel {
+  width: 60%;
+  margin: auto;
+  margin-top: 75px;
+}
+[class*="arrow-"] {
+  display: inline-block;
+  font-size: 30px;
+  color: lightgrey;
+}
+.carousel img {
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+#carousel_list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+#carousel_list > li {
+  display: inline-block;
+  color: blue;
+}
 /* medie query */
+@media screen and (max-width: 1200px) {
+
+  /* sezione design */
+
+  .carousel {
+    width: 80%;
+    margin: auto;
+    margin-top: 75px;
+  }
+  .carousel img {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+}
 
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 40px;
   }
+
+  /* sezione design */
+
+  .carousel {
+    width: 80%;
+    margin: auto;
+    margin-top: 75px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+
   /* sezione loghi */
   .row .col-xs-6 {
     height: 110px;
@@ -208,6 +266,14 @@ h3 {
     list-style: none;
     padding-left: 0;
     float: left;
+  }
+
+  /* sezione designed */
+  [class*="arrow-"] {
+    display: none;
+  }
+  #carousel_list > li {
+    font-size: 12px;
   }
 
 }
